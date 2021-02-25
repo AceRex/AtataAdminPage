@@ -1,0 +1,972 @@
+@media (max-width: 575.98px) {
+  header {
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    background-color: var(--colorLight);
+  }
+  header .role-view {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--colorGreen);
+    text-align: center;
+  }
+  header .role-view p {
+    width: 25%;
+    margin: auto;
+    padding: 5px;
+    font-size: 10Px;
+    font-weight: 600;
+    border: solid 1px var(--colorLight);
+    color: var(--colorLight);
+  }
+  header .header-center {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-center .Logo {
+    width: 20%;
+    margin: auto;
+  }
+  header .header-center .Logo img {
+    width: 100%;
+  }
+  header .header-center .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  header .header-center .search select {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 38%;
+  }
+  header .header-center .search input {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 72%;
+  }
+  header .header-center .search input::-webkit-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input:-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .account {
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  header .header-center .account .profile {
+    width: 85%;
+    background-color: #ebebeb;
+    margin: auto;
+    color: #c0bfbf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-center .account .profile .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  header .header-center .account .profile .profile-img img {
+    width: 80px;
+    margin-left: -11px;
+  }
+  header .header-center .account .profile .profile-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name span {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  header .header-center .account .account-dropdown {
+    position: absolute;
+    top: 13.5rem;
+    right: 6.5rem;
+    width: 40%;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    border: solid 1px #c0bfbf;
+  }
+  header .header-center .account .account-dropdown p {
+    font-size: 10px;
+    font-weight: 200;
+    margin: 2px;
+    padding: 5px;
+  }
+  header .header-center .account .account-dropdown span {
+    font-size: 10px;
+    margin: 5px;
+    font-weight: 200;
+    padding: 5px;
+  }
+  header .header-center .account .account-dropdown .link {
+    border-top: solid 10px #c0bfbf;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-center .account .account-dropdown .link a {
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px var(--colorGreen);
+    -webkit-box-shadow: 2px 2px #0000001c;
+            box-shadow: 2px 2px #0000001c;
+  }
+  header nav p {
+    font-size: 27px;
+    color: var(--colorGreen);
+    padding: 10px;
+  }
+  header nav li {
+    padding: 10px;
+  }
+  header nav li a {
+    font-size: 13px;
+    margin: auto;
+    color: var(--colorBlack);
+  }
+  header nav li:hover {
+    background-color: #0d850234;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  header nav .more {
+    font-size: 13px;
+    color: var(--colorBlack);
+  }
+  header nav .dropdown {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    padding: 10px;
+    border: solid 1px #d6d3d3;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    background-color: var(--colorLight);
+    position: fixed;
+  }
+  header .role-view {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--colorGreen);
+    text-align: center;
+  }
+  header .role-view p {
+    width: 25%;
+    margin: auto;
+    padding: 5px;
+    font-size: 10Px;
+    font-weight: 600;
+    border: solid 1px var(--colorLight);
+    color: var(--colorLight);
+  }
+  header .header-center {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-center .Logo {
+    width: 20%;
+    margin: auto;
+  }
+  header .header-center .Logo img {
+    width: 100%;
+  }
+  header .header-center .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  header .header-center .search select {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 38%;
+  }
+  header .header-center .search input {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 72%;
+  }
+  header .header-center .search input::-webkit-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input:-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .account {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  header .header-center .account .profile {
+    width: 85%;
+    background-color: #ebebeb;
+    margin: auto;
+    color: #c0bfbf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-center .account .profile .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  header .header-center .account .profile .profile-img img {
+    width: 80px;
+    margin-left: -11px;
+  }
+  header .header-center .account .profile .profile-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name span {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px var(--colorGreen);
+    -webkit-box-shadow: 2px 2px #0000001c;
+            box-shadow: 2px 2px #0000001c;
+  }
+  header nav p {
+    font-size: 27px;
+    color: var(--colorGreen);
+    padding: 10px;
+  }
+  header nav li {
+    padding: 10px;
+  }
+  header nav li a {
+    font-size: 13px;
+    margin: auto;
+    color: var(--colorBlack);
+  }
+  header nav li:hover {
+    background-color: #0d850234;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  header nav .more {
+    font-size: 13px;
+    color: var(--colorBlack);
+  }
+  header nav .dropdown {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    padding: 10px;
+    border: solid 1px #d6d3d3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    top: 0;
+    background-color: var(--colorLight);
+    position: fixed;
+  }
+  header .role-view {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--colorGreen);
+    text-align: center;
+  }
+  header .role-view p {
+    width: 25%;
+    margin: auto;
+    padding: 5px;
+    font-size: 10Px;
+    font-weight: 600;
+    border: solid 1px var(--colorLight);
+    color: var(--colorLight);
+  }
+  header .header-center {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-center .Logo {
+    width: 20%;
+    margin: auto;
+  }
+  header .header-center .Logo img {
+    width: 100%;
+  }
+  header .header-center .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  header .header-center .search select {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 38%;
+  }
+  header .header-center .search input {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 72%;
+  }
+  header .header-center .search input::-webkit-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input:-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .account {
+    width: 35%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  header .header-center .account .profile {
+    width: 85%;
+    background-color: #ebebeb;
+    margin: auto;
+    color: #c0bfbf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-center .account .profile .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  header .header-center .account .profile .profile-img img {
+    width: 80px;
+    margin-left: -11px;
+  }
+  header .header-center .account .profile .profile-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name span {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px var(--colorGreen);
+    -webkit-box-shadow: 2px 2px #0000001c;
+            box-shadow: 2px 2px #0000001c;
+  }
+  header nav p {
+    font-size: 27px;
+    color: var(--colorGreen);
+    padding: 10px;
+  }
+  header nav li {
+    padding: 10px;
+  }
+  header nav li a {
+    font-size: 13px;
+    margin: auto;
+    color: var(--colorBlack);
+  }
+  header nav li:hover {
+    background-color: #0d850234;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  header nav .more {
+    font-size: 13px;
+    color: var(--colorBlack);
+  }
+  header nav .dropdown {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    padding: 10px;
+    border: solid 1px #d6d3d3;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header {
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    background-color: var(--colorLight);
+  }
+  header .role-view {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--colorGreen);
+    text-align: center;
+  }
+  header .role-view p {
+    width: 25%;
+    margin: auto;
+    padding: 5px;
+    font-size: 10Px;
+    font-weight: 600;
+    border: solid 1px var(--colorLight);
+    color: var(--colorLight);
+  }
+  header .header-center {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  header .header-center .Logo {
+    width: 20%;
+    margin: auto;
+  }
+  header .header-center .Logo img {
+    width: 40%;
+  }
+  header .header-center .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+  header .header-center .search select {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 38%;
+  }
+  header .header-center .search input {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 72%;
+  }
+  header .header-center .search input::-webkit-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input:-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .account {
+    width: 30%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  header .header-center .account .profile {
+    width: 70%;
+    background-color: #ebebeb;
+    margin: auto;
+    color: #c0bfbf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    border: solid 1px transparent;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-center .account .profile .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  header .header-center .account .profile .profile-img img {
+    width: 80px;
+    margin-left: -11px;
+  }
+  header .header-center .account .profile .profile-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name span {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  header .header-center .account .profile:hover {
+    border: solid 1px #c0bfbf;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  header .header-center .account .account-dropdown {
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+    width: 20%;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    border: solid 1px #c0bfbf;
+  }
+  header .header-center .account .account-dropdown p {
+    font-size: 10px;
+    font-weight: 200;
+    margin: 2px;
+    padding: 5px;
+  }
+  header .header-center .account .account-dropdown span {
+    font-size: 10px;
+    margin: 5px;
+    font-weight: 200;
+    padding: 5px;
+  }
+  header .header-center .account .account-dropdown .link {
+    border-top: solid 10px #c0bfbf;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-center .account .account-dropdown .link a {
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px var(--colorGreen);
+    -webkit-box-shadow: 2px 2px #0000001c;
+            box-shadow: 2px 2px #0000001c;
+  }
+  header nav p {
+    font-size: 27px;
+    color: var(--colorGreen);
+    padding: 10px;
+  }
+  header nav li {
+    padding: 10px 20px;
+  }
+  header nav li a {
+    font-size: 13px;
+    margin: auto;
+    color: var(--colorBlack);
+  }
+  header nav li:hover {
+    background-color: #0d850234;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  header nav .more {
+    font-size: 13px;
+    color: var(--colorBlack);
+  }
+  header nav .dropdown {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    padding: 10px;
+    border: solid 1px #d6d3d3;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--colorLight);
+  }
+  header .role-view {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--colorGreen);
+    text-align: center;
+  }
+  header .role-view p {
+    width: 25%;
+    margin: auto;
+    padding: 5px;
+    font-size: 10Px;
+    font-weight: 600;
+    border: solid 1px var(--colorLight);
+    color: var(--colorLight);
+  }
+  header .header-center {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-center .Logo {
+    width: 20%;
+    margin: auto;
+  }
+  header .header-center .Logo img {
+    width: 30%;
+  }
+  header .header-center .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+  header .header-center .search select {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    font-size: 13px;
+  }
+  header .header-center .search input {
+    border: solid 1px #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 60%;
+  }
+  header .header-center .search input::-webkit-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input:-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::-ms-input-placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .search input::placeholder {
+    color: #e7e7e7;
+  }
+  header .header-center .account {
+    width: 20%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  header .header-center .account .profile {
+    width: 80%;
+    background-color: #ebebeb;
+    margin: auto;
+    color: #c0bfbf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: solid 1px transparent;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-center .account .profile .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  header .header-center .account .profile .profile-img img {
+    width: 80px;
+    margin-left: -11px;
+  }
+  header .header-center .account .profile .profile-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name p {
+    font-size: 12px;
+    padding: 5px;
+  }
+  header .header-center .account .profile .profile-name span {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  header .header-center .account .profile:hover {
+    border: solid 1px #c0bfbf;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  header .header-center .account .account-dropdown {
+    position: absolute;
+    top: 7.5rem;
+    right: 3rem;
+    width: 15%;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    border: solid 1px #c0bfbf;
+  }
+  header .header-center .account .account-dropdown p {
+    font-size: 10px;
+    font-weight: 200;
+    margin: 2px;
+    padding: 5px;
+  }
+  header .header-center .account .account-dropdown span {
+    font-size: 10px;
+    margin: 5px;
+    font-weight: 200;
+    padding: 5px;
+  }
+  header .header-center .account .account-dropdown .link {
+    border-top: solid 10px #c0bfbf;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-center .account .account-dropdown .link a {
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: solid 4px var(--colorGreen);
+    -webkit-box-shadow: 2px 2px #0000001c;
+            box-shadow: 2px 2px #0000001c;
+  }
+  header nav p {
+    font-size: 27px;
+    color: var(--colorGreen);
+    padding: 10px;
+  }
+  header nav li {
+    padding: 10px 20px;
+  }
+  header nav li a {
+    font-size: 13px;
+    margin: auto;
+    color: var(--colorBlack);
+  }
+  header nav li:hover {
+    background-color: #0d850234;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  header nav .more {
+    font-size: 13px;
+    color: var(--colorBlack);
+  }
+  header nav .dropdown {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    -webkit-box-shadow: 2px 3px #0000001c;
+            box-shadow: 2px 3px #0000001c;
+    padding: 10px;
+    border: solid 1px #d6d3d3;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,81 @@
+body {
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorBlack: #1c1c1c;
+    --colorLight: #fcfcfc;
+    --colorGreen: #0e8502;
+    --colorRed: #fa0214;
+    --colorOrange: #FF6001;
+    --colorYellow: #FFB302;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        height: 90vh;
+        margin-top: 17.5rem;
+        padding: 10px 0;
+        background-color: var(--colorLight);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+        height: 90vh;
+        margin-top: 16rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 100%;
+        height: 90vh;
+        margin-top: 20rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        max-width: 100%;
+        margin-top: 13rem;
+        padding-bottom: 2rem;
+        height: 70vh;
+        background-image: url('./bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        margin-top: 11.5rem;
+        padding-bottom: 2rem;
+        height: 80vh;
+        background-image: url('./bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

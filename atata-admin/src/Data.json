@@ -1,0 +1,47 @@
+{
+    "user": [
+        {
+            "adminName": " Oluwasegun Are",
+            "adminEmail": " Oluwasegunare@atata57.com",
+            "role": "Top Level",
+            "img": "./profilePhoto.jpg"
+        }
+    ],
+    "menuitem": [
+        {
+            "id": 0,
+            "menuTitle": "Home",
+            "menuLink": "/"
+        },
+        {
+            "id": 1,
+            "menuTitle": "Items",
+            "menuLink": "/items"
+        },
+        {
+            "id": 2,
+            "menuTitle": "Customer",
+            "menuLink": "/customerPage"
+        },
+        {
+            "id": 3,
+            "menuTitle": "Currency value",
+            "menuLink": "/currencyValue"
+        },
+        {
+            "id": 4,
+            "menuTitle": "Sold Items",
+            "menuLink": "/soldItems"
+        },
+        {
+            "id": 5,
+            "menuTitle": "Home Page",
+            "menuLink": "/homepageEditor"
+        },
+        {
+            "id": 6,
+            "menuTitle": "Create Admin",
+            "menuLink": "/createAdmin"
+        }
+    ]
+}

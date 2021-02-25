@@ -1,0 +1,33 @@
+@media (min-width: 1200px) {
+  .items-container {
+    width: 95%;
+    position: absolute;
+    top: 12.5rem;
+    left: 2%;
+    border-radius: 5px;
+    background-color: var(--colorLight);
+    -webkit-box-shadow: 2px 2px 10px #0000001e;
+            box-shadow: 2px 2px 10px #0000001e;
+    padding: 10px 0;
+  }
+  .items-container .items-container-header {
+    width: 98%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .items-container .items-container-header .header-title {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .items-container .items-container-header .header-component {
+    width: 50%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=Items.css.map */
