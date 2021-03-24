@@ -6,14 +6,13 @@ import { Link } from "react-router-dom";
 import { BsGrid3X3Gap } from "react-icons/bs";
 import { IoChevronDownSharp } from "react-icons/io5";
 import ProfilePhoto from "./profilePhoto.jpg";
+import data from "../../Data.json"
 
 class Header extends Component {
   constructor() {
     super();
     this.state = {
-      adminName: " Oluwasegun Are",
-      adminEmail: " Oluwasegunare@atata57.com",
-      role: "Top Level",
+      admin: data.user,
       selectValue: "",
       searchContent: "",
       menuItems: menuitem,
@@ -75,13 +74,10 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.state.getScreenSize);
 
     return (
       <header>
-        <div className="role-view">
-          <p>Role: {this.state.role} </p>
-        </div>
+       
         <div className="header-center">
           <div className="Logo">
             <img src={Logo} alt="logo" />
@@ -111,15 +107,15 @@ class Header extends Component {
                 <img src={ProfilePhoto} alt="profilephoto" />
               </div>
               <div className="profile-name">
-                <p>{this.state.adminName}</p>
+                <p>{this.state.admin[0].adminName}</p>
                 <span>
                   <IoChevronDownSharp />
                 </span>
               </div>
             </div>
             <div className={this.state.dropDown ? "account-dropdown" :  "hidden"}>
-             <p> {this.state.adminEmail} </p>
-             <span>Role: {this.state.role} </span>
+             <p> {this.state.admin[0].adminName} </p>
+             <span>Role: {this.state.admin[0].role} </span>
               <div className="link">
                 <Link to="/setting">
                   Setting

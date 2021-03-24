@@ -7,21 +7,6 @@
     position: fixed;
     background-color: var(--colorLight);
   }
-  header .role-view {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--colorGreen);
-    text-align: center;
-  }
-  header .role-view p {
-    width: 25%;
-    margin: auto;
-    padding: 5px;
-    font-size: 10Px;
-    font-weight: 600;
-    border: solid 1px var(--colorLight);
-    color: var(--colorLight);
-  }
   header .header-center {
     width: 100%;
     -webkit-box-align: center;
@@ -212,21 +197,6 @@
     background-color: var(--colorLight);
     position: fixed;
   }
-  header .role-view {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--colorGreen);
-    text-align: center;
-  }
-  header .role-view p {
-    width: 25%;
-    margin: auto;
-    padding: 5px;
-    font-size: 10Px;
-    font-weight: 600;
-    border: solid 1px var(--colorLight);
-    color: var(--colorLight);
-  }
   header .header-center {
     width: 100%;
     -webkit-box-align: center;
@@ -381,21 +351,6 @@
     top: 0;
     background-color: var(--colorLight);
     position: fixed;
-  }
-  header .role-view {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--colorGreen);
-    text-align: center;
-  }
-  header .role-view p {
-    width: 25%;
-    margin: auto;
-    padding: 5px;
-    font-size: 10Px;
-    font-weight: 600;
-    border: solid 1px var(--colorLight);
-    color: var(--colorLight);
   }
   header .header-center {
     width: 100%;
@@ -552,21 +507,6 @@
     top: 0;
     position: fixed;
     background-color: var(--colorLight);
-  }
-  header .role-view {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--colorGreen);
-    text-align: center;
-  }
-  header .role-view p {
-    width: 25%;
-    margin: auto;
-    padding: 5px;
-    font-size: 10Px;
-    font-weight: 600;
-    border: solid 1px var(--colorLight);
-    color: var(--colorLight);
   }
   header .header-center {
     width: 100%;
@@ -762,24 +702,8 @@
     width: 100%;
     margin: 0;
     top: 0;
-    position: fixed;
     z-index: 2;
     background-color: var(--colorLight);
-  }
-  header .role-view {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--colorGreen);
-    text-align: center;
-  }
-  header .role-view p {
-    width: 25%;
-    margin: auto;
-    padding: 5px;
-    font-size: 10Px;
-    font-weight: 600;
-    border: solid 1px var(--colorLight);
-    color: var(--colorLight);
   }
   header .header-center {
     width: 100%;
@@ -893,6 +817,7 @@
     top: 7.5rem;
     right: 3rem;
     width: 15%;
+    z-index: 2;
     background-color: #ececec;
     padding: 10px;
     border-radius: 5px;
@@ -961,7 +886,7 @@
     position: absolute;
     top: 16rem;
     right: 0;
-    z-index: -1;
+    z-index: 3;
     background-color: white;
     -webkit-box-shadow: 2px 3px #0000001c;
             box-shadow: 2px 3px #0000001c;

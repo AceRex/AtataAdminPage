@@ -12,18 +12,28 @@ body {
 :root {
     --colorBlack: #1c1c1c;
     --colorLight: #fcfcfc;
+    --colorWhite: #ffffff;
     --colorGreen: #0e8502;
     --colorRed: #fa0214;
     --colorOrange: #FF6001;
     --colorYellow: #FFB302;
+    --fontColor: #7A7877;
+    --borderColor: #DDDBDA;
+    --bgColor: #F3F2F2;
+    --headingBg: #F3F2F2;
+
 }
 
 a {
     text-decoration: none;
+    color: var(--fontColor);
 }
 
 li {
     list-style-type: none;
+}
+button{
+    cursor: pointer;
 }
 
 .hidden {
@@ -59,7 +69,7 @@ li {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .container {
         max-width: 100%;
-        margin-top: 13rem;
+        margin-top: 10rem;
         padding-bottom: 2rem;
         height: 70vh;
         background-image: url('./bg1.jpg');
@@ -71,9 +81,8 @@ li {
 @media (min-width: 1200px) {
     .container {
         max-width: 100%;
-        margin-top: 11.5rem;
         padding-bottom: 2rem;
-        height: 80vh;
+        height: 72.5vh;
         background-image: url('./bg1.jpg');
         background-repeat: no-repeat;
         background-size: cover;

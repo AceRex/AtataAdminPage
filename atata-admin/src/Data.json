@@ -1,7 +1,7 @@
 {
     "user": [
         {
-            "adminName": " Oluwasegun Are",
+            "adminName": " Admin Full Name",
             "adminEmail": " Oluwasegunare@atata57.com",
             "role": "Top Level",
             "img": "./profilePhoto.jpg"
@@ -19,29 +19,635 @@
             "menuLink": "/items"
         },
         {
-            "id": 2,
+          "id": 2,
+          "menuTitle": "Currency value",
+          "menuLink": "/currencyValue"
+      },
+        {
+            "id": 3,
             "menuTitle": "Customer",
             "menuLink": "/customerPage"
         },
-        {
-            "id": 3,
-            "menuTitle": "Currency value",
-            "menuLink": "/currencyValue"
-        },
+        
         {
             "id": 4,
-            "menuTitle": "Sold Items",
-            "menuLink": "/soldItems"
-        },
-        {
-            "id": 5,
             "menuTitle": "Home Page",
             "menuLink": "/homepageEditor"
         },
         {
-            "id": 6,
+            "id": 5,
             "menuTitle": "Create Admin",
             "menuLink": "/createAdmin"
         }
-    ]
+    ],
+    "allcategory": [
+        {
+          "_id": 0,
+          "link": "#",
+          "category": "Abstract Art",
+          "className": "active",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 1,
+          "link": "#",
+          "category": "African Figures",
+          "className": "active",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "5",
+            "CreatedBy" : "Mc Don",
+            "ApprovedBy" : "Osobee",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "51",
+            "CreatedBy" : "Mc Don",
+            "ApprovedBy" : "Osobee",
+            "Status" : "Available"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "5",
+            "CreatedBy" : "Mc Don",
+            "ApprovedBy" : "Osobee",
+            "Status" : "Sold"
+          },
+          {
+
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "2",
+            "CreatedBy" : "Mc Don",
+            "ApprovedBy" : "Osobee",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 2,
+          "link": "#",
+          "category": "African Heads",
+          "className": "active",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 3,
+          "link": "#",
+          "category": "Animal Skin",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Available"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Available"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 4,
+          "link": "#",
+          "category": "Antiques",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "2",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Available"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 5,
+          "link": "#",
+          "category": "Bead And wire Works",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 6,
+          "link": "#",
+          "category": "Craft",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 7,
+          "link": "#",
+          "category": "Gemstones",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 8,
+          "link": "#",
+          "category": "Horns & Skulls",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 9,
+          "link": "#",
+          "category": "Masks",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 10,
+          "link": "#",
+          "category": "Paintings",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 11,
+          "link": "#",
+          "category": "Pottery And Ceramic",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 12,
+          "link": "#",
+          "category": "Stones Ware",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 13,
+          "link": "#",
+          "category": "Textiles",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 14,
+          "link": "#",
+          "category": "Metal Works",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 15,
+          "link": "#",
+          "category": "Woven Items",
+          "Items" :[ 
+            
+            {
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        },
+        {
+          "_id": 16,
+          "link": "#",
+          "category": "Zulu Shields & Spears",
+          "Items" :[ 
+            {
+            
+              "_Id":0,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":1,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          },
+          {
+            "_Id":2,
+            "ProductName" : "shoe bags",
+            "ProductPrice" : "50",
+            "AvailableQTY" : "20",
+            "CreatedBy" : "Osobee",
+            "ApprovedBy" : "Mc Don",
+            "Status" : "Sold"
+          }
+        ]
+        }
+      ]
+   
 }

@@ -10,41 +10,46 @@ import CreateAdmin from "./screens/CreateAdmin/CreateAdmin"
 import Setting from "./screens/Setting/setting"
 import CustomerPreviewPage from "./screens/CustomerDetails/CustomerDetails"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from './Redux/store'
+
 
 export default class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Header />
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/items">
-              <Items />
-            </Route>
-            <Route path="/customerPage">
-              <CustomerPreviewPage />
-            </Route>
-            <Route path="/currencyValue">
-              <CurrencyUpdate />
-            </Route>
-            <Route path="/soldItems">
-              <SoldItems />
-            </Route>
-            <Route path="/homepageEditor">
-              <HomePageEditor />
-            </Route>
-            <Route path="/createAdmin">
-              <CreateAdmin />
-            </Route>
-            <Route path="/setting">
-              <Setting />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <div>
+            <Header />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/items">
+                <Items />
+              </Route>
+              <Route path="/customerPage">
+                <CustomerPreviewPage />
+              </Route>
+              <Route path="/currencyValue">
+                <CurrencyUpdate />
+              </Route>
+              <Route path="/soldItems">
+                <SoldItems />
+              </Route>
+              <Route path="/homepageEditor">
+                <HomePageEditor />
+              </Route>
+              <Route path="/createAdmin">
+                <CreateAdmin />
+              </Route>
+              <Route path="/setting">
+                <Setting />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </Provider>
     );
   }
 }

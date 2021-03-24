@@ -1,11 +1,1125 @@
-@media (min-width: 1200px) {
+@media (max-width: 575.98px) {
   .items-container {
-    width: 95%;
+    width: 100%;
+    height: 70vh;
+    margin-top: -2rem;
+    border-radius: 5px;
+    background-color: var(--bgColor);
+    -webkit-box-shadow: 2px 2px 10px #0000001e;
+            box-shadow: 2px 2px 10px #0000001e;
+    padding: 10px 0;
+  }
+  .items-container .items-container-header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-header .header-title {
+    width: 10%;
+    text-align: center;
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .items-container .items-container-header .header-component {
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .new-btn {
+    width: 30%;
+    margin: 5px 0px;
+  }
+  .items-container .items-container-header .header-component .new-btn button {
+    width: 100%;
+    padding: 7px;
+    border: transparent;
+    outline: none;
+    background-color: var(--colorGreen);
+    border-radius: 5px;
+    border: solid 1px var(--borderColor);
+    font-size: 13px;
+    color: var(--colorWhite);
+    cursor: pointer;
+  }
+  .items-container .items-container-header .header-component .new-btn button:hover {
+    background-color: var(--bgColor);
+    border: solid 1px var(--borderColor);
+  }
+  .items-container .items-container-header .header-component .search-list {
+    margin-top: 6px;
+    width: 80%;
+  }
+  .items-container .items-container-header .header-component .search-list input {
+    padding: 7px;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .search-list input::-webkit-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input:-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #0e8502;
+  }
+  .items-container .items-container-content {
+    background-color: var(--colorWhite);
+    height: 59vh;
+    overflow: hidden;
+    color: var(--fontColor);
+  }
+  .items-container .items-container-content .sideNav {
+    width: 98%;
+    margin: auto;
+    border-right: solid 1px #dbdbdb;
+    border-radius: 5px;
+  }
+  .items-container .items-container-content .sideNav p {
+    padding: 7px 13px;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: none;
+  }
+  .items-container .items-container-content .sideNav ul {
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .items-container .items-container-content .sideNav ul li {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-size: 800;
+    margin: 0 10px;
+  }
+  .items-container .items-container-content .sideNav ul li:hover {
+    color: #0e8502;
+  }
+  .items-container .items-container-content .sideNav ul li:active {
+    background-color: #0d85024b;
+    font-weight: 600;
+    color: #141414;
+    border-left: solid 3px #0e8502;
+  }
+  .items-container .items-container-content .content {
+    width: 100%;
+    height: 70%;
+    overflow-x: scroll;
+  }
+  .items-container .items-container-content .content table {
+    width: 102.2%;
+    border-spacing: 0px;
+  }
+  .items-container .items-container-content .content table tr th {
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(3) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(7) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr td {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr #btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+  }
+  .items-container .items-container-content .content table tr #btn .edit {
+    width: 50%;
+    color: var(--colorGreen);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr #btn .dlt {
+    width: 50%;
+    color: var(--colorRed);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr .edit:hover,
+  .items-container .items-container-content .content table tr .dlt:hover {
+    background-color: var(--borderColor);
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0000003d;
     position: absolute;
-    top: 12.5rem;
+    z-index: 2;
+  }
+  .modal .modal-content-container {
+    width: 98%;
+    margin: auto;
+  }
+  .modal .modal-content-container button {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .modal .modal-content-container .modal-content {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content {
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 100%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 100%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 98%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 20%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    border-top: solid 2px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .items-container {
+    width: 100%;
+    height: 70vh;
+    margin-top: -2rem;
+    border-radius: 5px;
+    background-color: var(--bgColor);
+    -webkit-box-shadow: 2px 2px 10px #0000001e;
+            box-shadow: 2px 2px 10px #0000001e;
+    padding: 10px 0;
+  }
+  .items-container .items-container-header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-header .header-title {
+    width: 10%;
+    text-align: center;
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .items-container .items-container-header .header-component {
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .new-btn {
+    width: 30%;
+    margin: 5px 0px;
+  }
+  .items-container .items-container-header .header-component .new-btn button {
+    width: 100%;
+    padding: 7px;
+    border: transparent;
+    outline: none;
+    background-color: var(--colorGreen);
+    border-radius: 5px;
+    border: solid 1px var(--borderColor);
+    font-size: 13px;
+    color: var(--colorWhite);
+    cursor: pointer;
+  }
+  .items-container .items-container-header .header-component .new-btn button:hover {
+    background-color: var(--bgColor);
+    border: solid 1px var(--borderColor);
+  }
+  .items-container .items-container-header .header-component .search-list {
+    margin-top: 6px;
+    width: 80%;
+  }
+  .items-container .items-container-header .header-component .search-list input {
+    padding: 7px;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .search-list input::-webkit-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input:-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #0e8502;
+  }
+  .items-container .items-container-content {
+    background-color: var(--colorWhite);
+    height: 59vh;
+    overflow: hidden;
+    color: var(--fontColor);
+  }
+  .items-container .items-container-content .sideNav {
+    width: 98%;
+    margin: auto;
+    border-right: solid 1px #dbdbdb;
+    border-radius: 5px;
+  }
+  .items-container .items-container-content .sideNav p {
+    padding: 7px 13px;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: none;
+  }
+  .items-container .items-container-content .sideNav ul {
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .items-container .items-container-content .sideNav ul li {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-size: 800;
+    margin: 0 10px;
+  }
+  .items-container .items-container-content .sideNav ul li:hover {
+    color: #0e8502;
+  }
+  .items-container .items-container-content .sideNav ul li:active {
+    background-color: #0d85024b;
+    font-weight: 600;
+    color: #141414;
+    border-left: solid 3px #0e8502;
+  }
+  .items-container .items-container-content .content {
+    width: 100%;
+    height: 70%;
+    overflow-x: scroll;
+  }
+  .items-container .items-container-content .content table {
+    width: 102.2%;
+    border-spacing: 0px;
+  }
+  .items-container .items-container-content .content table tr th {
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(3) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(7) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr td {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr #btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+  }
+  .items-container .items-container-content .content table tr #btn .edit {
+    width: 50%;
+    color: var(--colorGreen);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr #btn .dlt {
+    width: 50%;
+    color: var(--colorRed);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr .edit:hover,
+  .items-container .items-container-content .content table tr .dlt:hover {
+    background-color: var(--borderColor);
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0000003d;
+    position: absolute;
+    z-index: 2;
+  }
+  .modal .modal-content-container {
+    width: 98%;
+    margin: auto;
+  }
+  .modal .modal-content-container button {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .modal .modal-content-container .modal-content {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content {
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 100%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 100%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 98%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 40px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    border-top: solid 2px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .items-container {
+    width: 100%;
+    height: 70vh;
+    margin-top: -2rem;
+    border-radius: 5px;
+    background-color: var(--bgColor);
+    -webkit-box-shadow: 2px 2px 10px #0000001e;
+            box-shadow: 2px 2px 10px #0000001e;
+    padding: 10px 0;
+  }
+  .items-container .items-container-header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-header .header-title {
+    width: 10%;
+    text-align: center;
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .items-container .items-container-header .header-component {
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .new-btn {
+    width: 30%;
+    margin: 5px 0px;
+  }
+  .items-container .items-container-header .header-component .new-btn button {
+    width: 100%;
+    padding: 7px;
+    border: transparent;
+    outline: none;
+    background-color: var(--colorGreen);
+    border-radius: 5px;
+    border: solid 1px var(--borderColor);
+    font-size: 13px;
+    color: var(--colorWhite);
+    cursor: pointer;
+  }
+  .items-container .items-container-header .header-component .new-btn button:hover {
+    background-color: var(--bgColor);
+    border: solid 1px var(--borderColor);
+  }
+  .items-container .items-container-header .header-component .search-list {
+    margin-top: 6px;
+    width: 80%;
+  }
+  .items-container .items-container-header .header-component .search-list input {
+    padding: 7px;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .search-list input::-webkit-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input:-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #0e8502;
+  }
+  .items-container .items-container-content {
+    background-color: var(--colorWhite);
+    height: 59vh;
+    overflow: hidden;
+    color: var(--fontColor);
+  }
+  .items-container .items-container-content .sideNav {
+    width: 98%;
+    margin: auto;
+    border-right: solid 1px #dbdbdb;
+    border-radius: 5px;
+  }
+  .items-container .items-container-content .sideNav p {
+    padding: 7px 13px;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: none;
+  }
+  .items-container .items-container-content .sideNav ul {
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .items-container .items-container-content .sideNav ul li {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-size: 800;
+    margin: 0 10px;
+  }
+  .items-container .items-container-content .sideNav ul li:hover {
+    color: #0e8502;
+  }
+  .items-container .items-container-content .sideNav ul li:active {
+    background-color: #0d85024b;
+    font-weight: 600;
+    color: #141414;
+    border-left: solid 3px #0e8502;
+  }
+  .items-container .items-container-content .content {
+    width: 100%;
+    height: 70%;
+    overflow-x: scroll;
+  }
+  .items-container .items-container-content .content table {
+    width: 102.2%;
+    border-spacing: 0px;
+  }
+  .items-container .items-container-content .content table tr th {
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(3) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(7) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr td {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr #btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+  }
+  .items-container .items-container-content .content table tr #btn .edit {
+    width: 50%;
+    color: var(--colorGreen);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr #btn .dlt {
+    width: 50%;
+    color: var(--colorRed);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr .edit:hover,
+  .items-container .items-container-content .content table tr .dlt:hover {
+    background-color: var(--borderColor);
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0000003d;
+    position: absolute;
+    z-index: 2;
+  }
+  .modal .modal-content-container {
+    width: 98%;
+    margin: auto;
+  }
+  .modal .modal-content-container button {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .modal .modal-content-container .modal-content {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content {
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 100%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 100%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 98%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 40px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    border-top: solid 2px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .items-container {
+    width: 96%;
+    height: 70vh;
+    position: absolute;
+    top: 9.5rem;
     left: 2%;
     border-radius: 5px;
-    background-color: var(--colorLight);
+    background-color: var(--bgColor);
     -webkit-box-shadow: 2px 2px 10px #0000001e;
             box-shadow: 2px 2px 10px #0000001e;
     padding: 10px 0;
@@ -19,15 +1133,740 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    border-bottom: solid 1px #dbdbdb;
   }
   .items-container .items-container-header .header-title {
     width: 50%;
+    margin: 0px 5px;
     font-size: 20px;
     font-weight: 700;
   }
   .items-container .items-container-header .header-component {
     width: 50%;
     margin: auto;
+  }
+  .items-container .items-container-header .header-component .new-btn {
+    width: 12%;
+    margin-left: 87%;
+  }
+  .items-container .items-container-header .header-component .new-btn button {
+    width: 100%;
+    padding: 7px;
+    border: transparent;
+    outline: none;
+    background-color: var(--colorWhite);
+    border-radius: 5px;
+    border: solid 1px var(--borderColor);
+    font-size: 13px;
+    color: #3758b1;
+    cursor: pointer;
+  }
+  .items-container .items-container-header .header-component .new-btn button:hover {
+    background-color: var(--bgColor);
+    border: solid 1px var(--borderColor);
+  }
+  .items-container .items-container-header .header-component .search-list {
+    margin-left: 49%;
+    margin-top: 6px;
+    width: 50%;
+  }
+  .items-container .items-container-header .header-component .search-list input {
+    padding: 7px;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .search-list input::-webkit-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input:-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #0e8502;
+  }
+  .items-container .items-container-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--colorWhite);
+    height: 59vh;
+    overflow: hidden;
+    color: var(--fontColor);
+  }
+  .items-container .items-container-content .sideNav {
+    width: 18%;
+    border-right: solid 1px #dbdbdb;
+    border-radius: 5px;
+  }
+  .items-container .items-container-content .sideNav p {
+    padding: 7px 13px;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .items-container .items-container-content .sideNav ul {
+    overflow-y: scroll;
+    height: 59vh;
+  }
+  .items-container .items-container-content .sideNav ul li {
+    padding: 10px 15px;
+    margin: 3px 0;
+    border-left: solid 1px transparent;
+    font-size: 13px;
+    font-size: 800;
+  }
+  .items-container .items-container-content .sideNav ul li:hover {
+    background-color: #0d85024b;
+    border-left: solid 1px #0e8502;
+  }
+  .items-container .items-container-content .sideNav ul li:active {
+    background-color: #0d85024b;
+    font-weight: 600;
+    color: #141414;
+    border-left: solid 3px #0e8502;
+  }
+  .items-container .items-container-content .content {
+    width: 80%;
+  }
+  .items-container .items-container-content .content table {
+    width: 102.2%;
+    border-spacing: 0px;
+  }
+  .items-container .items-container-content .content table tr th {
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(3) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(7) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr td {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr #btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+  }
+  .items-container .items-container-content .content table tr #btn .edit {
+    width: 50%;
+    color: var(--colorGreen);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr #btn .dlt {
+    width: 50%;
+    color: var(--colorRed);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr .edit:hover,
+  .items-container .items-container-content .content table tr .dlt:hover {
+    background-color: var(--borderColor);
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0000003d;
+    position: absolute;
+    z-index: 2;
+  }
+  .modal .modal-content-container {
+    width: 80%;
+    margin: auto;
+  }
+  .modal .modal-content-container button {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .modal .modal-content-container .modal-content {
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content {
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 50%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 355px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 98%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    border-top: solid 2px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button {
+    width: 10%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+}
+
+@media (min-width: 1200px) {
+  .items-container {
+    width: 95%;
+    height: 70vh;
+    position: absolute;
+    top: 9.5rem;
+    left: 2%;
+    border-radius: 5px;
+    background-color: var(--bgColor);
+    -webkit-box-shadow: 2px 2px 10px #0000001e;
+            box-shadow: 2px 2px 10px #0000001e;
+    padding: 10px 0;
+  }
+  .items-container .items-container-header {
+    width: 98%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-header .header-title {
+    width: 50%;
+    margin: 0px 5px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .items-container .items-container-header .header-component {
+    width: 50%;
+    margin: auto;
+  }
+  .items-container .items-container-header .header-component .new-btn {
+    width: 12%;
+    margin-left: 87%;
+  }
+  .items-container .items-container-header .header-component .new-btn button {
+    width: 100%;
+    padding: 7px;
+    border: transparent;
+    outline: none;
+    background-color: var(--colorWhite);
+    border-radius: 5px;
+    border: solid 1px var(--borderColor);
+    font-size: 13px;
+    color: #3758b1;
+    cursor: pointer;
+  }
+  .items-container .items-container-header .header-component .new-btn button:hover {
+    background-color: var(--bgColor);
+    border: solid 1px var(--borderColor);
+  }
+  .items-container .items-container-header .header-component .search-list {
+    margin-left: 49%;
+    margin-top: 6px;
+    width: 50%;
+  }
+  .items-container .items-container-header .header-component .search-list input {
+    padding: 7px;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+  }
+  .items-container .items-container-header .header-component .search-list input::-webkit-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input:-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::-ms-input-placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input::placeholder {
+    color: var(--fontColor);
+  }
+  .items-container .items-container-header .header-component .search-list input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #0e8502;
+  }
+  .items-container .items-container-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--colorWhite);
+    height: 59vh;
+    overflow: hidden;
+    color: var(--fontColor);
+  }
+  .items-container .items-container-content .sideNav {
+    width: 13%;
+    border-right: solid 1px #dbdbdb;
+    border-radius: 5px;
+  }
+  .items-container .items-container-content .sideNav p {
+    padding: 7px 13px;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .items-container .items-container-content .sideNav ul {
+    overflow-y: scroll;
+    height: 59vh;
+  }
+  .items-container .items-container-content .sideNav ul li {
+    padding: 10px 15px;
+    margin: 3px 0;
+    border-left: solid 1px transparent;
+    font-size: 13px;
+    font-size: 800;
+  }
+  .items-container .items-container-content .sideNav ul li:hover {
+    background-color: #0d85024b;
+    border-left: solid 1px #0e8502;
+  }
+  .items-container .items-container-content .sideNav ul li:active {
+    background-color: #0d85024b;
+    font-weight: 600;
+    color: #141414;
+    border-left: solid 3px #0e8502;
+  }
+  .items-container .items-container-content .content {
+    width: 85%;
+  }
+  .items-container .items-container-content .content table {
+    width: 102.2%;
+    border-spacing: 0px;
+  }
+  .items-container .items-container-content .content table tr th {
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    border: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(3) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr th:nth-child(7) {
+    width: 10%;
+  }
+  .items-container .items-container-content .content table tr td {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: solid 1px #dbdbdb;
+  }
+  .items-container .items-container-content .content table tr #btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+  }
+  .items-container .items-container-content .content table tr #btn .edit {
+    width: 50%;
+    color: var(--colorGreen);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr #btn .dlt {
+    width: 50%;
+    color: var(--colorRed);
+    cursor: pointer;
+  }
+  .items-container .items-container-content .content table tr .edit:hover,
+  .items-container .items-container-content .content table tr .dlt:hover {
+    background-color: var(--borderColor);
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #0000003d;
+    position: absolute;
+  }
+  .modal .modal-content-container {
+    width: 60%;
+    margin: auto;
+  }
+  .modal .modal-content-container button {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .modal .modal-content-container .modal-content {
+    width: 100%;
+    height: 87vh;
+    border-radius: 5px;
+    background-color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content {
+    width: 100%;
+    height: 75vh;
+    overflow-y: scroll;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 50%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 355px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 98%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    border-top: solid 2px var(--borderColor);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button {
+    width: 10%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
   }
 }
 /*# sourceMappingURL=Items.css.map */
