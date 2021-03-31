@@ -33,11 +33,6 @@
             "id": 4,
             "menuTitle": "Home Page",
             "menuLink": "/homepageEditor"
-        },
-        {
-            "id": 5,
-            "menuTitle": "Create Admin",
-            "menuLink": "/createAdmin"
         }
     ],
     "allcategory": [

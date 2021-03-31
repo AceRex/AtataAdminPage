@@ -71,7 +71,7 @@ button{
         max-width: 100%;
         margin-top: 10rem;
         padding-bottom: 2rem;
-        height: 70vh;
+        height: 76vh;
         background-image: url('./bg1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -82,7 +82,7 @@ button{
     .container {
         max-width: 100%;
         padding-bottom: 2rem;
-        height: 72.5vh;
+        height: 78vh;
         background-image: url('./bg1.jpg');
         background-repeat: no-repeat;
         background-size: cover;

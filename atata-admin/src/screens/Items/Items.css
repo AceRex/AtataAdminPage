@@ -1,6 +1,6 @@
 @media (max-width: 575.98px) {
   .items-container {
-    width: 100%;
+    max-width: 100%;
     height: 70vh;
     margin-top: -2rem;
     border-radius: 5px;
@@ -10,7 +10,7 @@
     padding: 10px 0;
   }
   .items-container .items-container-header {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-bottom: solid 1px #dbdbdb;
   }
@@ -75,12 +75,12 @@
   }
   .items-container .items-container-content {
     background-color: var(--colorWhite);
-    height: 59vh;
+    height: 70vh;
     overflow: hidden;
     color: var(--fontColor);
   }
   .items-container .items-container-content .sideNav {
-    width: 98%;
+    width: 100%;
     margin: auto;
     border-right: solid 1px #dbdbdb;
     border-radius: 5px;
@@ -173,6 +173,7 @@
     background-color: #0000003d;
     position: absolute;
     z-index: 2;
+    padding-top: 2rem;
   }
   .modal .modal-content-container {
     width: 98%;
@@ -191,13 +192,13 @@
   }
   .modal .modal-content-container .modal-content {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     border-radius: 5px;
     background-color: var(--colorWhite);
   }
   .modal .modal-content-container .modal-content .modal-content-content {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content section {
@@ -367,11 +368,214 @@
   .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
     background-color: #0f6e06;
   }
+  .preview__modal {
+    width: 100%;
+    height: 78vh;
+    top: 15rem;
+    position: absolute;
+  }
+  .preview__modal .preview__content__container {
+    width: 100%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content {
+    width: 100%;
+    height: 77.5vh;
+    background-color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content {
+    width: 90%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .heading {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group {
+    width: 100%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .header {
+    width: 100%;
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 98%;
+    padding: 0px 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 310px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    padding-left: 1rem;
+    border-top: solid 2px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete {
+    background-color: var(--colorRed);
+    color: #fff;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete:hover {
+    background-color: #a50202;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .items-container {
-    width: 100%;
+    max-width: 100%;
     height: 70vh;
     margin-top: -2rem;
     border-radius: 5px;
@@ -381,7 +585,7 @@
     padding: 10px 0;
   }
   .items-container .items-container-header {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-bottom: solid 1px #dbdbdb;
   }
@@ -446,12 +650,12 @@
   }
   .items-container .items-container-content {
     background-color: var(--colorWhite);
-    height: 59vh;
+    height: 70vh;
     overflow: hidden;
     color: var(--fontColor);
   }
   .items-container .items-container-content .sideNav {
-    width: 98%;
+    width: 100%;
     margin: auto;
     border-right: solid 1px #dbdbdb;
     border-radius: 5px;
@@ -544,6 +748,7 @@
     background-color: #0000003d;
     position: absolute;
     z-index: 2;
+    padding-top: 2rem;
   }
   .modal .modal-content-container {
     width: 98%;
@@ -562,13 +767,13 @@
   }
   .modal .modal-content-container .modal-content {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     border-radius: 5px;
     background-color: var(--colorWhite);
   }
   .modal .modal-content-container .modal-content .modal-content-content {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content section {
@@ -620,7 +825,7 @@
     width: 98%;
   }
   .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
-    width: 40px;
+    width: 20%;
   }
   .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
     display: -webkit-box;
@@ -737,12 +942,215 @@
   }
   .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
     background-color: #0f6e06;
+  }
+  .preview__modal {
+    width: 100%;
+    height: 78vh;
+    top: 15rem;
+    position: absolute;
+  }
+  .preview__modal .preview__content__container {
+    width: 100%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content {
+    width: 100%;
+    height: 77.5vh;
+    background-color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content {
+    width: 90%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .heading {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group {
+    width: 100%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .header {
+    width: 100%;
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 98%;
+    padding: 0px 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 310px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    padding-left: 1rem;
+    border-top: solid 2px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete {
+    background-color: var(--colorRed);
+    color: #fff;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete:hover {
+    background-color: #a50202;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .items-container {
-    width: 100%;
+    max-width: 100%;
     height: 70vh;
     margin-top: -2rem;
     border-radius: 5px;
@@ -752,7 +1160,7 @@
     padding: 10px 0;
   }
   .items-container .items-container-header {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-bottom: solid 1px #dbdbdb;
   }
@@ -817,12 +1225,12 @@
   }
   .items-container .items-container-content {
     background-color: var(--colorWhite);
-    height: 59vh;
+    height: 70vh;
     overflow: hidden;
     color: var(--fontColor);
   }
   .items-container .items-container-content .sideNav {
-    width: 98%;
+    width: 100%;
     margin: auto;
     border-right: solid 1px #dbdbdb;
     border-radius: 5px;
@@ -915,6 +1323,7 @@
     background-color: #0000003d;
     position: absolute;
     z-index: 2;
+    padding-top: 2rem;
   }
   .modal .modal-content-container {
     width: 98%;
@@ -933,13 +1342,13 @@
   }
   .modal .modal-content-container .modal-content {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     border-radius: 5px;
     background-color: var(--colorWhite);
   }
   .modal .modal-content-container .modal-content .modal-content-content {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content section {
@@ -991,7 +1400,7 @@
     width: 98%;
   }
   .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
-    width: 40px;
+    width: 20%;
   }
   .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
     display: -webkit-box;
@@ -1109,14 +1518,217 @@
   .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
     background-color: #0f6e06;
   }
+  .preview__modal {
+    width: 100%;
+    height: 78vh;
+    top: 15rem;
+    position: absolute;
+  }
+  .preview__modal .preview__content__container {
+    width: 100%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content {
+    width: 100%;
+    height: 77.5vh;
+    background-color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content {
+    width: 90%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .heading {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group {
+    width: 100%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .header {
+    width: 100%;
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 98%;
+    padding: 0px 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 310px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    padding-left: 1rem;
+    border-top: solid 2px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete {
+    background-color: var(--colorRed);
+    color: #fff;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete:hover {
+    background-color: #a50202;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .items-container {
-    width: 96%;
+    width: 95%;
     height: 70vh;
     position: absolute;
-    top: 9.5rem;
+    top: 11rem;
     left: 2%;
     border-radius: 5px;
     background-color: var(--bgColor);
@@ -1238,7 +1850,7 @@
     border-left: solid 3px #0e8502;
   }
   .items-container .items-container-content .content {
-    width: 80%;
+    width: 82%;
   }
   .items-container .items-container-content .content table {
     width: 102.2%;
@@ -1283,16 +1895,19 @@
   .items-container .items-container-content .content table tr .dlt:hover {
     background-color: var(--borderColor);
   }
+  .items-container .items-container-content .content table .item__:hover {
+    background-color: var(--bgColor);
+    cursor: pointer;
+  }
   .modal {
     width: 100%;
-    height: 100vh;
-    top: 0;
+    height: 80vh;
+    top: 10rem;
     background-color: #0000003d;
     position: absolute;
-    z-index: 2;
   }
   .modal .modal-content-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   .modal .modal-content-container button {
@@ -1308,14 +1923,13 @@
   }
   .modal .modal-content-container .modal-content {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     border-radius: 5px;
     background-color: var(--colorWhite);
+    overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content {
     width: 100%;
-    height: 70vh;
-    overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content section {
     width: 95%;
@@ -1368,7 +1982,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 98%;
+    width: 100%;
   }
   .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
     width: 60px;
@@ -1467,7 +2081,7 @@
     border-top: solid 2px var(--borderColor);
   }
   .modal .modal-content-container .modal-content .modal-content-content-btn button {
-    width: 10%;
+    width: 17%;
     margin: 2px;
     border: solid 1px var(--borderColor);
     border-radius: 7px;
@@ -1475,7 +2089,7 @@
     font-size: 13px;
     font-weight: 500;
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
   }
   .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
     background-color: var(--borderColor);
@@ -1489,12 +2103,213 @@
   .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
     background-color: #0f6e06;
   }
+  .preview__modal {
+    width: 82%;
+    height: 75vh;
+    top: -0.4rem;
+    position: absolute;
+  }
+  .preview__modal .preview__content__container {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+  .preview__modal .preview__content__container .modal-content {
+    width: 100%;
+    height: 73vh;
+    background-color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content {
+    width: 100%;
+    height: 65vh;
+    overflow-y: scroll;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 50%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 355px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    padding-left: 33rem;
+    border-top: solid 2px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete {
+    background-color: var(--colorRed);
+    color: #fff;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete:hover {
+    background-color: #a50202;
+  }
 }
 
 @media (min-width: 1200px) {
   .items-container {
     width: 95%;
-    height: 70vh;
+    height: 75vh;
     position: absolute;
     top: 9.5rem;
     left: 2%;
@@ -1580,12 +2395,13 @@
     display: -ms-flexbox;
     display: flex;
     background-color: var(--colorWhite);
-    height: 59vh;
+    height: 64vh;
+    padding: 0px 5px;
     overflow: hidden;
     color: var(--fontColor);
   }
   .items-container .items-container-content .sideNav {
-    width: 13%;
+    width: 18%;
     border-right: solid 1px #dbdbdb;
     border-radius: 5px;
   }
@@ -1598,7 +2414,7 @@
   }
   .items-container .items-container-content .sideNav ul {
     overflow-y: scroll;
-    height: 59vh;
+    height: 64vh;
   }
   .items-container .items-container-content .sideNav ul li {
     padding: 10px 15px;
@@ -1618,7 +2434,7 @@
     border-left: solid 3px #0e8502;
   }
   .items-container .items-container-content .content {
-    width: 85%;
+    width: 82%;
   }
   .items-container .items-container-content .content table {
     width: 102.2%;
@@ -1663,6 +2479,10 @@
   .items-container .items-container-content .content table tr .dlt:hover {
     background-color: var(--borderColor);
   }
+  .items-container .items-container-content .content table .item__:hover {
+    background-color: var(--bgColor);
+    cursor: pointer;
+  }
   .modal {
     width: 100%;
     height: 100vh;
@@ -1671,7 +2491,7 @@
     position: absolute;
   }
   .modal .modal-content-container {
-    width: 60%;
+    width: 70%;
     margin: auto;
   }
   .modal .modal-content-container button {
@@ -1690,11 +2510,10 @@
     height: 87vh;
     border-radius: 5px;
     background-color: var(--colorWhite);
+    overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content {
     width: 100%;
-    height: 75vh;
-    overflow-y: scroll;
   }
   .modal .modal-content-container .modal-content .modal-content-content section {
     width: 95%;
@@ -1747,7 +2566,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 98%;
+    width: 100%;
   }
   .modal .modal-content-container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
     width: 60px;
@@ -1846,7 +2665,7 @@
     border-top: solid 2px var(--borderColor);
   }
   .modal .modal-content-container .modal-content .modal-content-content-btn button {
-    width: 10%;
+    width: 17%;
     margin: 2px;
     border: solid 1px var(--borderColor);
     border-radius: 7px;
@@ -1854,7 +2673,7 @@
     font-size: 13px;
     font-weight: 500;
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
   }
   .modal .modal-content-container .modal-content .modal-content-content-btn button:hover {
     background-color: var(--borderColor);
@@ -1867,6 +2686,218 @@
   }
   .modal .modal-content-container .modal-content .modal-content-content-btn .save:hover {
     background-color: #0f6e06;
+  }
+  .preview__modal {
+    width: 82%;
+    height: 78vh;
+    top: -0.3rem;
+    position: absolute;
+  }
+  .preview__modal .preview__content__container {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+  .preview__modal .preview__content__container button {
+    margin-right: 0;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    color: var(--colorWhite);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .preview__modal .preview__content__container .modal-content {
+    width: 100%;
+    height: 77.5vh;
+    background-color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content {
+    width: 100%;
+    height: 69vh;
+    overflow-y: scroll;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .heading {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group {
+    width: 95%;
+    margin: auto;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .header {
+    background-color: var(--headingBg);
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry {
+    width: 50%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload {
+    width: 100%;
+    padding: 7px 0;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage {
+    width: 98%;
+    overflow: hidden;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .mainImage img {
+    width: 355px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .image-upload .image-selection img {
+    width: 60px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7px 0;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs label {
+    width: 100%;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs input {
+    width: 90%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs select {
+    width: 94%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry .entry-inputs textarea {
+    resize: none;
+    width: 90%;
+    font-size: 13px;
+    color: var(--fontColor);
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table {
+    width: 100%;
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table input {
+    border: solid 1px var(--borderColor);
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    color: var(--fontColor);
+    outline: none;
+    margin: 2px;
+    text-align: center;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input {
+    width: 80%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-webkit-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input:-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::-ms-input-placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .lft-input::placeholder {
+    background-color: var(--bgColor);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--fontColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content section .form-group .entry-group .entry table .rgt-input {
+    width: 89%;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn {
+    padding: 10px;
+    padding-left: 45rem;
+    border-top: solid 2px var(--borderColor);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px var(--borderColor);
+    border-radius: 7px;
+    color: var(--fontColor);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn button:hover {
+    background-color: var(--borderColor);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save {
+    background-color: var(--colorGreen);
+    color: var(--colorWhite);
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .save:hover {
+    background-color: #0f6e06;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete {
+    background-color: var(--colorRed);
+    color: #fff;
+  }
+  .preview__modal .preview__content__container .modal-content .modal-content-content-btn .delete:hover {
+    background-color: #a50202;
   }
 }
 /*# sourceMappingURL=Items.css.map */

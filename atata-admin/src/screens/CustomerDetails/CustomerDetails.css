@@ -1,1 +1,214 @@
-/* No CSS *//*# sourceMappingURL=CustomerDetails.css.map */
+@media (max-width: 575.98px) {
+  .customer__details {
+    max-width: 90%;
+    margin: auto;
+    background-color: var(--colorWhite);
+  }
+  .customer__details h3 {
+    margin: 10px 5px;
+  }
+  .customer__details .customers__table .ant-table-thead {
+    background-color: var(--bgColor);
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-thead .ant-table-cell {
+    padding: 2px 30px;
+    font-size: 10px;
+  }
+  .customer__details .customers__table .ant-table-tbody {
+    font-size: 13px;
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-tbody .ant-table-cell {
+    padding: 5px;
+  }
+  .customer__details .customers__table .ant-pagination {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    margin: auto;
+  }
+  .customer__details .customers__table .ant-pagination li {
+    padding: 10px;
+  }
+  .customer__details .customers__table .ant-pagination button {
+    border: none;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .customer__details {
+    max-width: 90%;
+    margin: auto;
+    background-color: var(--colorWhite);
+  }
+  .customer__details h3 {
+    margin: 10px 5px;
+  }
+  .customer__details .customers__table .ant-table-thead {
+    background-color: var(--bgColor);
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-thead .ant-table-cell {
+    padding: 2px 30px;
+    font-size: 10px;
+  }
+  .customer__details .customers__table .ant-table-tbody {
+    font-size: 13px;
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-tbody .ant-table-cell {
+    padding: 5px;
+  }
+  .customer__details .customers__table .ant-pagination {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    margin: auto;
+  }
+  .customer__details .customers__table .ant-pagination li {
+    padding: 10px;
+  }
+  .customer__details .customers__table .ant-pagination button {
+    border: none;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .customer__details {
+    max-width: 90%;
+    margin: auto;
+    background-color: var(--colorWhite);
+  }
+  .customer__details h3 {
+    margin: 10px 5px;
+  }
+  .customer__details .customers__table .ant-table-thead {
+    background-color: var(--bgColor);
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-thead .ant-table-cell {
+    padding: 2px 30px;
+    font-size: 10px;
+  }
+  .customer__details .customers__table .ant-table-tbody {
+    font-size: 13px;
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-tbody .ant-table-cell {
+    padding: 5px;
+  }
+  .customer__details .customers__table .ant-pagination {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    margin: auto;
+  }
+  .customer__details .customers__table .ant-pagination li {
+    padding: 10px;
+  }
+  .customer__details .customers__table .ant-pagination button {
+    border: none;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .customer__details {
+    max-width: 90%;
+    margin: auto;
+    background-color: var(--colorWhite);
+  }
+  .customer__details h3 {
+    margin: 10px 5px;
+    padding: 20px;
+  }
+  .customer__details .customers__table {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  .customer__details .customers__table .ant-table-thead {
+    background-color: var(--bgColor);
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-thead .ant-table-cell {
+    padding: 15px 30px;
+    font-size: 10px;
+    width: 20%;
+  }
+  .customer__details .customers__table .ant-table-tbody {
+    font-size: 13px;
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-tbody .ant-table-cell {
+    padding: 10px;
+  }
+  .customer__details .customers__table .ant-pagination {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    max-width: 100%;
+    margin: auto;
+  }
+  .customer__details .customers__table .ant-pagination li {
+    padding: 10px;
+  }
+  .customer__details .customers__table .ant-pagination button {
+    border: none;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customer__details {
+    max-width: 80%;
+    margin: auto;
+    background-color: var(--colorWhite);
+  }
+  .customer__details h3 {
+    padding: 20px;
+  }
+  .customer__details .customers__table {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  .customer__details .customers__table .ant-table-thead {
+    background-color: var(--bgColor);
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-thead .ant-table-cell {
+    padding: 10px 30px;
+    font-size: 14px;
+    width: 30%;
+  }
+  .customer__details .customers__table .ant-table-tbody {
+    font-size: 13px;
+    text-align: center;
+  }
+  .customer__details .customers__table .ant-table-tbody .ant-table-cell {
+    padding: 5px;
+    border-bottom: solid 1px var(--borderColor);
+  }
+  .customer__details .customers__table .ant-pagination {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    max-width: 100%;
+    margin: auto;
+  }
+  .customer__details .customers__table .ant-pagination li {
+    padding: 10px;
+  }
+  .customer__details .customers__table .ant-pagination button {
+    border: none;
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=CustomerDetails.css.map */
