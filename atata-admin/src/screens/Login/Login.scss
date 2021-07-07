@@ -1,0 +1,509 @@
+@media (max-width: 575.98px) { 
+    .login-container {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 100vh;
+        background-image: url('https://res.cloudinary.com/atata-synergy-and-resource-ltd/image/upload/v1619443353/6086b6e8bae9d_is4aa2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+
+        .text__slider {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+
+            .logo__container {
+                padding: 5px 0px;
+                overflow: hidden;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .loops {
+               display: none;
+            }
+
+        }
+
+        .form__container {
+            width: 98%;
+            height: 70%;
+            margin: auto;
+
+            form {
+                width: 100%;
+            height: 100%;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+                padding: 2rem 0;
+
+                .form__heading {
+                    padding: 2rem;
+
+                    p {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 800;
+                        margin: 5px;
+                        color: var(--fontColor);
+                    }
+
+                    span {
+                        width: 100%;
+                        font-size: 12px;
+                        color: var(--fontColor);
+
+                    }
+
+                }
+
+                .form-group {
+                    width: 80%;
+                    margin: 25px auto;
+                    // padding: 20px 0px;
+                    display: flex;
+                    border-bottom: solid 2px var(--borderColor);
+                    align-items: center;
+
+                    input {
+                        width: 77%;
+                        padding: 12px;
+                        border: none;
+                        outline: none;
+                    }
+
+                    label {
+                        width: 23%;
+                        font-size: 12px;
+                        text-align: left;
+                        font-weight: 600;
+                        color: var(--fontColor);
+                    }
+                }
+
+                .button {
+                    width: 75%;
+                    margin: 20px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        background-color: var(--colorGreen);
+                        color: white;
+                        margin: 15px 0px;
+                        border: none;
+                        padding: 12px;
+                        border-radius: 5px;
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+
+        }
+    }
+ }
+
+// @media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .login-container {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        background-image: url('https://res.cloudinary.com/atata-synergy-and-resource-ltd/image/upload/v1619443353/6086b6e8bae9d_is4aa2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+
+        .text__slider {
+            width: 50%;
+            height: 70vh;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+
+            .logo__container {
+                width: 25%;
+                margin: auto;
+                padding: 20px 0px;
+                overflow: hidden;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .loops {
+                width: 80%;
+                margin: auto;
+                margin-top: 4rem;
+
+                p {
+                    font-size: 50px;
+                    width: 50%;
+                    text-shadow: 2px 2px 6px #0000008f;
+                    font-weight: 800;
+                    color: var(--colorWhite);
+                    word-wrap: break-word;
+                    text-transform: capitalize;
+                }
+            }
+
+        }
+
+        .form__container {
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+
+            form {
+                width: 80%;
+                margin: auto;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+                padding: 20px 10px;
+
+                .form__heading {
+                    padding: 2rem;
+
+                    p {
+                        width: 100%;
+                        font-size: 25px;
+                        font-weight: 800;
+                        margin: 5px;
+                        color: var(--fontColor);
+                    }
+
+                    span {
+                        width: 100%;
+                        font-size: 12px;
+                        color: var(--fontColor);
+
+                    }
+
+                }
+
+                .form-group {
+                    width: 75%;
+                    margin: 25px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    border-bottom: solid 2px var(--borderColor);
+                    align-items: center;
+
+                    input {
+                        width: 80%;
+                        padding: 12px;
+                        border: none;
+                        outline: none;
+                    }
+
+                    label {
+                        width: 20%;
+                        font-size: 13px;
+                        text-align: left;
+                        font-weight: 600;
+                        color: var(--fontColor);
+                    }
+                }
+
+                .button {
+                    width: 75%;
+                    margin: 20px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        background-color: var(--colorGreen);
+                        color: white;
+                        margin: 15px 0px;
+                        border: none;
+                        padding: 12px;
+                        border-radius: 5px;
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+
+        }
+    }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .login-container {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        background-image: url('https://res.cloudinary.com/atata-synergy-and-resource-ltd/image/upload/v1619443353/6086b6e8bae9d_is4aa2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+
+        .text__slider {
+            width: 50%;
+            height: 70vh;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+
+            .logo__container {
+                width: 25%;
+                margin: auto;
+                padding: 20px 0px;
+                overflow: hidden;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .loops {
+                width: 90%;
+                margin: auto;
+                margin-top: 4rem;
+
+                p {
+                    font-size: 45px;
+                    width: 50%;
+                    text-shadow: 2px 2px 4px #000000b0;
+                    font-weight: 800;
+                    color: var(--colorWhite);
+                    word-wrap: break-word;
+                    text-transform: capitalize;
+                }
+            }
+
+        }
+
+        .form__container {
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+
+            form {
+                width: 90%;
+                margin: auto;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+                padding: 20px 10px;
+
+                .form__heading {
+                    padding: 2rem;
+
+                    p {
+                        width: 100%;
+                        font-size: 25px;
+                        font-weight: 800;
+                        margin: 5px;
+                        color: var(--fontColor);
+                    }
+
+                    span {
+                        width: 100%;
+                        font-size: 12px;
+                        color: var(--fontColor);
+
+                    }
+
+                }
+
+                .form-group {
+                    width: 75%;
+                    margin: 25px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    border-bottom: solid 2px var(--borderColor);
+                    align-items: center;
+
+                    input {
+                        width: 80%;
+                        padding: 12px;
+                        border: none;
+                        outline: none;
+                    }
+
+                    label {
+                        text-align: left;
+                        width: 20%;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--fontColor);
+                    }
+                }
+
+                .button {
+                    width: 75%;
+                    margin: 20px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        background-color: var(--colorGreen);
+                        color: white;
+                        margin: 15px 0px;
+                        border: none;
+                        padding: 12px;
+                        border-radius: 5px;
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-container {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        background-image: url('https://res.cloudinary.com/atata-synergy-and-resource-ltd/image/upload/v1619443353/6086b6e8bae9d_is4aa2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+
+        .text__slider {
+            width: 50%;
+            height: 70vh;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+
+            .logo__container {
+                width: 25%;
+                margin: auto;
+                padding: 20px 0px;
+                overflow: hidden;
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .loops {
+                width: 80%;
+                margin: auto;
+                margin-top: 4rem;
+
+                p {
+                    font-size: 50px;
+                    width: 50%;
+                    text-shadow: 2px 2px 6px #0000008f;
+                    font-weight: 800;
+                    color: var(--colorWhite);
+                    word-wrap: break-word;
+                    text-transform: capitalize;
+                }
+            }
+
+        }
+
+        .form__container {
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+
+            form {
+                width: 80%;
+                margin: auto;
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+                padding: 20px 10px;
+
+                .form__heading {
+                    padding: 2rem;
+
+                    p {
+                        width: 100%;
+                        font-size: 25px;
+                        font-weight: 800;
+                        margin: 5px;
+                        color: var(--fontColor);
+                    }
+
+                    span {
+                        width: 100%;
+                        font-size: 12px;
+                        color: var(--fontColor);
+
+                    }
+
+                }
+
+                .form-group {
+                    width: 75%;
+                    margin: 25px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    border-bottom: solid 2px var(--borderColor);
+                    align-items: center;
+
+                    input {
+                        width: 80%;
+                        padding: 12px;
+                        border: none;
+                        outline: none;
+                    }
+
+                    label {
+                        width: 20%;
+                        font-size: 13px;
+                        text-align: left;
+                        font-weight: 600;
+                        color: var(--fontColor);
+                    }
+                }
+
+                .button {
+                    width: 75%;
+                    margin: 20px auto;
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        background-color: var(--colorGreen);
+                        color: white;
+                        margin: 15px 0px;
+                        border: none;
+                        padding: 12px;
+                        border-radius: 5px;
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

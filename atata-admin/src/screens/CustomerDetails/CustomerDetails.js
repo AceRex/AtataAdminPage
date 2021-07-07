@@ -1,97 +1,20 @@
 import { Table } from 'antd'
 import { useState } from 'react'
 import './CustomerDetails.css'
+import axios from 'axios'
 
 
+// const allUser = axios.get('http://api.atata57.com/buyers')
+//     .then(res => console.log(res))
 const dataSource = [
-    {
-        key: '1',
-        name: 'Are Oluwasegun Johnson',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '2',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '3',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '4',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '5',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '6',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '7',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '8',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '9',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '10',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    },
-    {
-        key: '11',
-        name: 'Mike John Doe',
-        customerID: 'ATLG001',
-        phoneNumber: '07055467890',
-        email: 'oluwasegunAre@atata57.com',
-        location: 'Lagos'
-    }
+    // {
+    //     key: allUser.id,
+    //     name: allUser.first_name + allUser.last_name,
+    //     //    customerID: 'ATLG001',
+    //        phoneNumber: allUser.phone
+    //     //    email: 'oluwasegunAre@atata57.com',
+    //     //    location: 'Lagos'
+    // }
 ]
 
 const columns = [
