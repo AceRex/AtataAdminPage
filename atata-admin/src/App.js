@@ -10,9 +10,7 @@ import CreateAdmin from "./screens/CreateAdmin/CreateAdmin"
 import Setting from "./screens/Setting/setting"
 import Login from './screens/Login/Login'
 import CustomerPreviewPage from "./screens/CustomerDetails/CustomerDetails"
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
-import { Provider } from "react-redux";
-import store from './Redux/store'
+import {Route, Redirect, Switch } from "react-router-dom";
 import { useAuth } from "./Authentication/Auth0";
 import "antd/dist/antd.css";
 
@@ -20,55 +18,51 @@ import "antd/dist/antd.css";
 export default function App() {
   let auth = useAuth()
   return (
-    <Provider store={store}>
-      <Router>
-        <Switch>
+    <>
+      <Switch>
         <Route path="/login">
           <Login />
         </Route>
-        </Switch>
-      
+      </Switch>
 
-        <Route exact path="/">
-          
-          {auth.user === null ? <Redirect to="/login" />
-          
-          : 
-          
+
+      <Route exact path="/">
+
+        {auth.user === null ? <Redirect to="/login" />
+
+          :
+
           <div>
-          <Header />
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/items">
-              <Items />
-            </Route>
-            <Route path="/customerPage">
-              <CustomerPreviewPage />
-            </Route>
-            <Route path="/currencyValue">
-              <CurrencyUpdate />
-            </Route>
-            <Route path="/soldItems">
-              <SoldItems />
-            </Route>
-            <Route path="/homepageEditor">
-              <HomePageEditor />
-            </Route>
-            <Route path="/createAdmin">
-              <CreateAdmin />
-            </Route>
-            <Route path="/setting">
-              <Setting />
-            </Route>
-          </Switch>
-        </div>
+            <Header />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/items">
+                <Items />
+              </Route>
+              <Route path="/customerPage">
+                <CustomerPreviewPage />
+              </Route>
+              <Route path="/currencyValue">
+                <CurrencyUpdate />
+              </Route>
+              <Route path="/soldItems">
+                <SoldItems />
+              </Route>
+              <Route path="/homepageEditor">
+                <HomePageEditor />
+              </Route>
+              <Route path="/createAdmin">
+                <CreateAdmin />
+              </Route>
+              <Route path="/setting">
+                <Setting />
+              </Route>
+            </Switch>
+          </div>
         }
-        </Route>
-
-        
-      </Router>
-    </Provider>
+      </Route>
+    </>
   );
 }

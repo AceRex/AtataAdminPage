@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext, createContext } from "react";
 import axios from 'axios'
 import { useHistory } from 'react-router-dom'
 import { getStorageData, saveStorageData, setStorageData, StorageKeys } from './auth_data'
-import { Button, message } from 'antd';
+import { message } from 'antd';
 
 
 // Axios credentials
@@ -35,16 +35,17 @@ function useProvideAuth() {
 
     let history = useHistory()
 
+    const key = 'updatable';
+
     const signin = (email, password) => {
         return (
             axios.post(`${BASEURL}/admin/login`, { email, password })
                 .then(
                     (res => {
                         setLoading(true)
-                        console.log(res.data.data.admin)
-                        message.loading({ content: 'Hold on - Logging In...' });
+                        message.loading({ content: 'Hold on - Logging In...', key });
                         setTimeout(() => {
-                            message.success({ content: res.data.msg });
+                            message.success({ content: res.data.msg, key, duration: 2 });
                         }, 1000);
                         saveStorageData('user', res.data.data.admin)
                         document.cookie = `${res.data.data.token}; secure`
@@ -53,25 +54,51 @@ function useProvideAuth() {
                         setTimeout(() =>
                             history.push('/'), 3000)
                     }))
-            // .catch(
-            //     (error => {
-            //         console.log(error)
-            //         // message.loading({ content: 'Loading...' });
-            //         // setTimeout(() => {
-            //         //     message.error({ content: err.data });
-            //         // }, 1000);
-            //     }
-            //     )
-            // )
+                .catch(
+                    (error => {
+                        if (error.response) {
+
+                            setLoading(true)
+                            message.loading({ content: 'Loading...', key });
+                            setTimeout(() => {
+                                message.error({ content: error.response.data.errors, key, duration: 2 });
+                            }, 1000);
+                            setTimeout(() =>
+                                setLoading(false), 3500)
+
+                        } else if (error.request) {
+                            setLoading(true)
+                            message.loading({ content: 'Loading...', key });
+                            setTimeout(() => {
+                                message.warning({ content: 'Connect to an Internet', key, duration: 2 });
+                            }, 1000);
+                            setTimeout(() =>
+                                setLoading(false), 3500)
+
+                        } else {
+                            history.push("/")
+                        }
+                    })
+                )
+
         )
     };
     const logout = () => {
         return (
-            axios.get(`${BASEURL}/auth/logout`)
+            axios.post(`${BASEURL}/admin/logout`)
                 .then((response => {
-                    setUser(null)
-                    localStorage.clear()
-                    history.push('/')
+                    setLoading(false)
+                    message.loading({ content: 'Logging you Out...', key });
+                    setTimeout(() => {
+                        message.success({ content: "Logout Successful", key, duration: 2 });
+                    }, 1000);
+                    setTimeout(() =>
+                        setUser(null), 3000)
+                    setTimeout(() =>
+                        localStorage.clear(), 3000)
+                    setTimeout(() =>
+                        history.push('/login'), 3000)
+
                 }))
         )
     };

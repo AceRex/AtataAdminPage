@@ -1,47 +1,33 @@
-import React, { Component } from "react";
+import React from "react";
 import ProfilePhoto from "./profilePhoto.jpg";
 import "./Setting.css";
 import { MdEdit } from "react-icons/md";
+import { useAuth } from "../../Authentication/Auth0";
 
-export default class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      ProfilePhoto: ProfilePhoto,
-      adminName: " Oluwasegun Are",
-      adminEmail: " Oluwasegunare@atata57.com",
-      newPassword: "",
-      retypePassword: "",
-      disabled: false,
-      role: "Top Level",
-      department: "Information Technology",
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleEnable = this.handleEnable.bind(this);
-  }
-  handleChange(event) {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value,
-    });
-  }
-  handleEnable() {
-    this.setState({
-      disabled: !this.state.disabled,
-    });
-  }
-  render() {
+export default function Home () {
+  let Auth =  useAuth()
+  
+  
+      const [ProfilePhoto, setProfilePhoto] = React.useState(ProfilePhoto)
+      const [adminName, setadminName]  = React.useState("Oluwasegun Are")
+      const [adminEmail, setadminEmail] = React.useState(" Oluwasegunare@atata57.com")
+      const [newPassword, setNewPassword] = React.useState("")
+      const [retypePassword, setPassword] = React.useState("")
+      const [disabled, setDisabled] = React.useState(false)
+      const [role, setRole] = React.useState("Top Level")
+      const [department, setDept] = React.useState("Information Technology")
+
     return (
       <div className="container">
         <div className="image-container">
           <div className="user-details">
-            <p>{this.state.adminName}</p>
-            <span>{this.state.adminEmail}</span>
-            <span>{this.state.department}</span>
-            <span>{this.state.role} Admin</span>
+            <p>{adminName}</p>
+            <span>{adminEmail}</span>
+            <span>{department}</span>
+            <span>{role} Admin</span>
           </div>
           <div className="profile-photo">
-            <img src={this.state.ProfilePhoto} alt="profilePhoto" />
+            <img src={ProfilePhoto} alt="profilePhoto" />
           </div>
         </div>
         <div className="password">
@@ -51,26 +37,30 @@ export default class Home extends Component {
                 <input
                   type="password"
                   name="newPassword"
-                  disabled={this.state.disabled ? "" : "disabled"}
-                  value={this.state.newPassword}
+                  disabled={disabled ? "" : "disabled"}
+                  value={newPassword}
                   placeholder="Enter New Password"
-                  onChange={this.handleChange}
+                  onChange={(e) => setNewPassword(e.target.value)}
                 />
                 <span>
-                  <MdEdit onClick={this.handleEnable} />
+                  <MdEdit
+                  // onClick={this.handleEnable}
+                   />
                 </span>
               </div>
               <div className="input-group">
                 <input
                   type="password"
                   name="retypePassword"
-                  value={this.state.retypePassword}
-                  disabled={this.state.disabled ? "" : "disabled"}
+                  value={retypePassword}
+                  disabled={disabled ? "" : "disabled"}
                   placeholder="retype New Password"
-                  onChange={this.handleChange}
+                  // onChange={(e) => }
                 />
                 <span>
-                  <MdEdit onClick={this.handleEnable} />
+                  <MdEdit
+                  // onClick={this.handleEnable}
+                  />
                 </span>
               </div>
               <div className="input-group">
@@ -81,4 +71,3 @@ export default class Home extends Component {
       </div>
     );
   }
-}

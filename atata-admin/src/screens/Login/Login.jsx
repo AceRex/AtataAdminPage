@@ -15,7 +15,7 @@ export default function Login() {
 
     const onClick = (e) => {
         e.preventDefault();
-        setClicked(true)
+        setClicked(!clicked)
         auth.signin(email, password)
     }
 
@@ -58,7 +58,7 @@ export default function Login() {
                         onChange={(e)=> setPassword(e.target.value)} />
                     </div>
                     <div className='button'>
-                        <button onClick={onClick}>{clicked ?  <CircularProgress style={{color:'#fff', width: 20, height:20}} /> : 'login' }</button>
+                        <button onClick={onClick}>{auth.loading === true ?  <CircularProgress style={{color:'#fff', width: 20, height:20}} /> : 'login' }</button>
                     </div>
                 </form>
             </div>
